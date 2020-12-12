@@ -1,4 +1,3 @@
 source "https://rubygems.org"
-ruby "~> 2.7.x"
 
-gem "ruby_figlet", "~> 0.6.1"
+gem "cowsay", "~> 0.3.0"

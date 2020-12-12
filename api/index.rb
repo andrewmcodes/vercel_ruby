@@ -1,9 +1,12 @@
 require "cowsay"
 
 Handler = proc { |req, res|
-  name = req.query["name"] || "Remote Ruby"
-
   res.status = 200
   res["Content-Type"] = "text/text; charset=utf-8"
-  res.body = RubyFiglet::Figlet.new(name).show
+  if req.query.has_key?("name")
+    name = req.query["name"]
+    res.body = Cowsay.say "Hello, #{name}!", "cow"
+  else
+    res.body = Cowsay.say "Hello, stranger!", "cow"
+  end
 }

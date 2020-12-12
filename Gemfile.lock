@@ -1,16 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    ruby_figlet (0.6.1)
+    cowsay (0.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  ruby_figlet (~> 0.6.1)
-
-RUBY VERSION
-   ruby 2.7.2p137
+  cowsay (~> 0.3.0)
 
 BUNDLED WITH
    2.1.4
