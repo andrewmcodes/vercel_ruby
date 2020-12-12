@@ -1,4 +1,4 @@
-require "ruby_figlet"
+require "cowsay"
 
 Handler = proc { |req, res|
   name = req.query["name"] || "Remote Ruby"
