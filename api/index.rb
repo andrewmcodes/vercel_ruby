@@ -7,6 +7,6 @@ Handler = proc { |req, res|
     name = req.query["name"]
     res.body = Cowsay.say "Hello, #{name}!", "cow"
   else
-    res.body = Cowsay.say "Hello, stranger!", "cow"
+    res.body = Cowsay.say "Hello, stranger!\nShare your name with me as a param! (/api?name=Carrie)", "cow"
   end
 }
